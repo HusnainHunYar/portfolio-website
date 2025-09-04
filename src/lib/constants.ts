@@ -3,13 +3,13 @@ export const SITE_CONFIG = {
   title: 'Full-Stack Engineer',
   description:
     'Passionate full-stack engineer crafting digital experiences with modern technologies',
-  url: 'https://janedoe-portfolio.vercel.app',
-  ogImage: 'https://janedoe-portfolio.vercel.app/og.jpg',
+  url: 'https://husnainhunYar.github.io/portfolio-website',
+  ogImage: 'https://husnainhunYar.github.io/portfolio-website/og.jpg',
   links: {
-    github: 'https://github.com/janedoe',
-    linkedin: 'https://linkedin.com/in/janedoe',
-    twitter: 'https://twitter.com/janedoe',
-    email: 'jane@example.com',
+    github: 'https://github.com/HusnainHunYar',
+    linkedin: 'https://linkedin.com/in/husnainhunYar',
+    twitter: 'https://twitter.com/husnainhunYar',
+    email: 'hasnain@example.com',
   },
 };
 

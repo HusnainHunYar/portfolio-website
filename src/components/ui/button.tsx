@@ -1,9 +1,8 @@
 import * as React from 'react';
 import { cn } from '@/lib/utils';
-import { motion } from 'framer-motion';
+import { motion, HTMLMotionProps } from 'framer-motion';
 
-export interface ButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends Omit<HTMLMotionProps<'button'>, 'ref'> {
   variant?: 'default' | 'secondary' | 'outline' | 'ghost';
   size?: 'default' | 'sm' | 'lg';
   asChild?: boolean;
