@@ -7,7 +7,13 @@ const bundleAnalyzer = withBundleAnalyzer({
 });
 
 const nextConfig: NextConfig = {
+  output: 'export',
+  trailingSlash: true,
+  basePath: process.env.NODE_ENV === 'production' ? '/portfolio-website' : '',
+  assetPrefix:
+    process.env.NODE_ENV === 'production' ? '/portfolio-website/' : '',
   images: {
+    unoptimized: true, // Required for static export
     domains: ['images.unsplash.com', 'via.placeholder.com'],
     formats: ['image/webp', 'image/avif'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
