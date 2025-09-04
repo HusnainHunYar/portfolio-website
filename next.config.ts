@@ -9,7 +9,7 @@ const bundleAnalyzer = withBundleAnalyzer({
 const nextConfig: NextConfig = {
   output: 'export',
   trailingSlash: true,
-  basePath: '/portfolio-website',
+  basePath: process.env.NODE_ENV === 'production' ? '/portfolio-website' : '',
   images: {
     unoptimized: true, // Required for static export
   },
