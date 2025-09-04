@@ -31,7 +31,7 @@ export function AboutSection() {
                 <div className="aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-primary/20 to-accent/20 p-1">
                   <div className="w-full h-full rounded-xl overflow-hidden">
                     <Image
-                      src="/my-avatar.png"
+                      src={`${process.env.NODE_ENV === 'production' ? '/portfolio-website' : ''}/my-avatar.png`}
                       alt="Muhammad Hasnain Shahid - Full-Stack Engineer"
                       width={500}
                       height={500}
