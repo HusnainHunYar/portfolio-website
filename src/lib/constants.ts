@@ -4,12 +4,12 @@ export const SITE_CONFIG = {
   description:
     'Passionate full-stack engineer crafting digital experiences with modern technologies',
   url: 'https://husnainhunYar.github.io/portfolio-website',
-  ogImage: 'https://husnainhunYar.github.io/portfolio-website/og.jpg',
+  ogImage: 'https://husnainhunYar.github.io/portfolio-website/my-avatar.png',
   links: {
     github: 'https://github.com/HusnainHunYar',
-    linkedin: 'https://linkedin.com/in/husnainhunYar',
-    twitter: 'https://twitter.com/husnainhunYar',
-    email: 'hasnain@example.com',
+    linkedin: 'https://www.linkedin.com/in/muhammad-hasnain-shahid-310157251/',
+    twitter: 'https://x.com/HusnainHunYar',
+    email: 'm347hasnain@gmail.com',
   },
 };
 

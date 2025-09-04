@@ -8,6 +8,7 @@ import { SkillCard } from '@/components/ui/skill-card';
 const categories = {
   frontend: 'Frontend',
   backend: 'Backend',
+  database: 'Databases',
   tools: 'Tools & DevOps',
   other: 'Other',
 };
@@ -42,27 +43,49 @@ export function SkillsSection() {
           {Object.entries(groupedSkills).map(
             ([category, categorySkills], categoryIndex) => (
               <AnimatedSection key={category} delay={categoryIndex * 0.2}>
-                <div>
-                  <h3 className="text-xl font-semibold text-foreground mb-6 text-center">
-                    {categories[category as keyof typeof categories]}
-                  </h3>
+                <div className="relative">
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                    viewport={{ once: true }}
+                    className="text-center mb-8"
+                  >
+                    <h3 className="text-2xl font-bold text-foreground mb-2 relative inline-block">
+                      {categories[category as keyof typeof categories]}
+                      <motion.div
+                        className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-primary to-accent rounded-full"
+                        initial={{ scaleX: 0 }}
+                        whileInView={{ scaleX: 1 }}
+                        transition={{ duration: 0.8, delay: 0.2 }}
+                        viewport={{ once: true }}
+                      />
+                    </h3>
+                  </motion.div>
 
-                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                  <motion.div
+                    className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6"
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 0.6, delay: 0.2 }}
+                    viewport={{ once: true }}
+                  >
                     {categorySkills.map((skill, index) => (
                       <motion.div
                         key={skill.name}
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
+                        initial={{ opacity: 0, y: 30, scale: 0.8 }}
+                        whileInView={{ opacity: 1, y: 0, scale: 1 }}
                         transition={{
                           duration: 0.5,
                           delay: index * 0.1,
+                          ease: 'easeOut',
                         }}
                         viewport={{ once: true }}
                       >
                         <SkillCard skill={skill} />
                       </motion.div>
                     ))}
-                  </div>
+                  </motion.div>
                 </div>
               </AnimatedSection>
             )

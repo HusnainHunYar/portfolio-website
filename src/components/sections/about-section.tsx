@@ -31,8 +31,8 @@ export function AboutSection() {
                 <div className="aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-primary/20 to-accent/20 p-1">
                   <div className="w-full h-full rounded-xl overflow-hidden">
                     <Image
-                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=500&fit=crop&crop=face"
-                      alt="Jane Doe - Full-Stack Engineer"
+                      src="/my-avatar.png"
+                      alt="Muhammad Hasnain Shahid - Full-Stack Engineer"
                       width={500}
                       height={500}
                       className="w-full h-full object-cover"
@@ -75,28 +75,27 @@ export function AboutSection() {
             <div className="space-y-6">
               <div className="space-y-4">
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur.
+                  I&apos;m a passionate full-stack engineer with over 2 years of
+                  experience building modern web and mobile applications. I
+                  specialize in creating scalable, user-friendly solutions using
+                  cutting-edge technologies like React, Next.js, and React
+                  Native for frontend development.
                 </p>
 
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                  qui officia deserunt mollit anim id est laborum. Sed ut
-                  perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam, eaque
-                  ipsa quae ab illo inventore veritatis.
+                  On the backend, I work with Node.js, Python frameworks like
+                  Django and Flask, and various databases including PostgreSQL
+                  and MongoDB. I&apos;m committed to writing clean, maintainable
+                  code and following best practices in software development,
+                  testing, and deployment.
                 </p>
 
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Et harum quidem rerum facilis est et expedita distinctio. Nam
-                  libero tempore, cum soluta nobis est eligendi optio cumque
-                  nihil impedit quo minus id quod maxime placeat facere
-                  possimus, omnis voluptas assumenda est, omnis dolor
-                  repellendus.
+                  When I&apos;m not coding, I enjoy staying up-to-date with the
+                  latest technology trends, contributing to open-source
+                  projects, and sharing knowledge with the developer community.
+                  I believe in continuous learning and always strive to deliver
+                  exceptional digital experiences.
                 </p>
               </div>
 
@@ -107,7 +106,7 @@ export function AboutSection() {
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.2 }}
                 >
-                  <div className="text-3xl font-bold text-primary mb-2">5+</div>
+                  <div className="text-3xl font-bold text-primary mb-2">2+</div>
                   <div className="text-sm text-muted-foreground">
                     Years Experience
                   </div>
@@ -119,7 +118,7 @@ export function AboutSection() {
                   transition={{ duration: 0.2 }}
                 >
                   <div className="text-3xl font-bold text-primary mb-2">
-                    50+
+                    10+
                   </div>
                   <div className="text-sm text-muted-foreground">
                     Projects Completed

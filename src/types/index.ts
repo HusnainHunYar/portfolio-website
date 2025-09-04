@@ -21,7 +21,7 @@ export interface BlogPost {
 export interface Skill {
   name: string;
   icon: string;
-  category: 'frontend' | 'backend' | 'tools' | 'other';
+  category: 'frontend' | 'backend' | 'database' | 'tools' | 'other';
 }
 
 export interface ContactForm {
